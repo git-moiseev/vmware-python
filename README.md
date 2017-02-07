@@ -5,13 +5,13 @@ Python program for cold migration VMs from/to Virtual Center or ESXi host
 
 ## Steps to do
 
-* Create credentials file 
+* Edit credentials file .credentials.json
 ```
 { 
   "host": "vc", 
   "user": "foo", 
   "pwd": "boo", 
-  "port":443
+  "port": 443
  }
 ```
 * Create portable dump
