@@ -276,7 +276,7 @@ if __name__ == "__main__":
 
     # login credentials file. Example: '{"host": "vc", "user": "foo", "pwd":
     # "boo", "port":443}'
-    credits_file = '/home/captain/.vsphere.json'
+    credits_file = '.credentials.json'
     # Do not do anything with vm with names in list. Migrate them manualy
     excluded_vm = ['VMware vCenter Server 5.5']
     filename = args.file
