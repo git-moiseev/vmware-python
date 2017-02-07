@@ -1,8 +1,8 @@
 # vmware-python
 
 Based on  https://github.com/vmware/pyvmomi-community-samples.git
-
 Python program for cold migration VMs from/to Virtual Center or ESXi host
+
 ## Steps to do
 
 * Create credentials file 
