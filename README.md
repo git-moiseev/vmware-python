@@ -20,21 +20,21 @@ cold-migrate.py --dump --file /tmp/dump.json
 ```
 * Powers off all VMs. If vmware-tools installed and running, shutdowns guests, if not, poweroff
 ```
-cold-migrate.py --poweroff
+cold-migrate.py --file /tmp/dump.json --poweroff
 ```
 * Remove all VMs from inventory
 ```
- --unregister
+ cold-migrate.py --file /tmp/dump.json --unregister
 ```
 * migrate Virtual Center to new location manualy
 * change dump.json, if needed (New datasore path, destination folders, etc..)
 * Add VMs from dump file to inventory
 ```
---register
+cold-migrate.py --file /tmp/dump.json --register
 ```
 * Turn the power on all servers that was poweredOn at the time of the dump
 ```
---poweron
+cold-migrate.py --file /tmp/dump.json --poweron
 ```
 
 # TODO
